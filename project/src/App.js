@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import FuelData from "./components/Day 1, part 1/index";
+
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="mainHeader">Placeholder for eventual routing</header>
+      <section className="mainHeading">
+        <h1> This is the project file for the Advent of Code, 2019</h1>
+      </section>
+      <section className="body">
+        {/* <h2 className="daySelector">Please choose a day of the month</h2> */}
+        <div className="day1">
+          <h2 className="day1Title">Day 1</h2>
+          <section className="daySectionBody">
+            <FuelData />
+          </section>
+        </div>
+      </section>
     </div>
   );
 }

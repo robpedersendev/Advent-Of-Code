@@ -1,6 +1,6 @@
 import React from "react";
 
-import FuelData from "./components/Day 1, part 1/index";
+import { FuelData, TotalFuelData } from "./components/Day 1, part 1/index";
 
 import "./App.css";
 
@@ -17,6 +17,7 @@ function App() {
           <h2 className="day1Title">Day 1</h2>
           <section className="daySectionBody">
             <FuelData />
+            <TotalFuelData />
           </section>
         </div>
       </section>
